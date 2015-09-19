@@ -1,3 +1,37 @@
 .content {
     padding-left:245px;
 }
+
+.loader, .progress {
+    display: none;
+}
+
+.logo {
+    margin-top:-10px;
+    padding-top:15px;
+    padding-bottom:15px;
+    -webkit-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+*   Material Design Correction
+**/
+i.small {
+    font-size:2rem !important;
+}
+i.large {
+    font-size:6rem !important;
+}
