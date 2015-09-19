@@ -8,11 +8,11 @@ $(document).ready(function () {
         //Pour envoyer plusieurs fichiers avec un FormData,
         //On parcourt tout nos fichiers qu'on append au formdata
         var formData = new FormData(this);
-        $('#formUpload.files').each(function(i, file) {
-            formData.append('video-'+i, file);
-        });
+        for (var i = 0; i < document.getElementById("uploadFiles").files.length; i++) {
+            var file = $("input[type=file]")[0].files[i];
+            formData.append('videos', file);
+        }
 
-        console.log(formData);
         $.ajax({
             url: "http://localhost:8080/upload",
             type: "POST",
@@ -40,6 +40,8 @@ $(document).ready(function () {
             }
         })
     });
+
+
 });
 
 

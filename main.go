@@ -33,6 +33,7 @@ func upload(w http.ResponseWriter, r *http.Request) {
 
 		//get the *fileheaders
 	files := m.File["videos"]
+	log.Println(files)
 	for i, _ := range files {
 			//for each fileheader, get a handle to the actual file
 		file, err := files[i].Open()
