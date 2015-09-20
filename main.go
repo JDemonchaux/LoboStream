@@ -96,16 +96,11 @@ func upload(w http.ResponseWriter, r *http.Request) {
 }
 
 func convert(sourcePath string, nameDestination string)  {
-	cmd := exec.Command("ffmpeg -i uploadedfile -threads 16 test.webm")
-	cmd.Start()
-	log.Println(" processing..." )
 
-	//cmd.Process.Kill()
+   out, err := exec.Command("ffmpeg.exe", "-i", sourcePath, "-codec:a", "aac", "-strict", "-2", nameDestination+".mp4").CombinedOutput()
+   if err != nil {
+      log.Println("some error found",err)
+   }
 
-	out,err := cmd.Output()
-	if err != nil {
-		log.Println("some error found",err)
-	}
-	log.Println("out",string(out))
-
+   log.Println("out",string(out))
 }

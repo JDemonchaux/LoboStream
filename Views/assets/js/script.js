@@ -4,20 +4,14 @@ $(document).ready(function () {
         e.preventDefault();
         $("#formUpload").hide("slow");
         $(".loader").show("slow");
+        $(".determinate").attr("style", "width: 0%;");
 
-        //Pour envoyer plusieurs fichiers avec un FormData,
-        //On parcourt tout nos fichiers qu'on append au formdata
-
+        //On recupère le nombre de video a envoyer
         var nbVideo = document.getElementById("uploadFiles").files.length;
         var current = 0;
-        //for (var i = 0; i < ; i++) {
-        //    var file = $("input[type=file]")[0].files[i];
-        //    formData.append('videos', file);
-        //}
+
+        //Fonction recursive qui envoie les vidéos une à une
         uploadVideo(current, nbVideo);
-
-        //
-
     });
 
 
@@ -34,13 +28,13 @@ function uploadVideo(current, nbVideo) {
         cache: false,
         contentType: false,
         processData: false,
-        xhr: function () {
-            var request = $.ajaxSettings.xhr();
-            if (request.upload) { // Test si la propriété upload existe.
-                request.addEventListener('progress', showProgress, false);
-            }
-            return request;
-        },
+        //xhr: function () {
+        //    var request = $.ajaxSettings.xhr();
+        //    if (request.upload) { // Test si la propriété upload existe.
+        //        request.addEventListener('progress', showProgress, false);
+        //    }
+        //    return request;
+        //},
         success: function (msg) {
             var prog = parseInt( (current / nbVideo * 100), 10) + "%";
             $('.progressUpload').show("slow");
@@ -60,14 +54,4 @@ function uploadVideo(current, nbVideo) {
             $('.progressUpload').append("<p>error : " + err + "</p>");
         }
     })
-}
-
-function showProgress(e) {
-    //if (e.lengthComputable) {
-    //    console.log(e);
-    //    $('.progressUpload').show("slow");
-    //    $('.progressUpload').append("<p>Progress : " + parseInt( (e.loaded / e.total * 100), 10) + "%</p>");
-    //} else {
-    //    console.log("impossible de calculer le progress");
-    //}
 }
