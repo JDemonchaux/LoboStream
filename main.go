@@ -32,13 +32,13 @@ func upload(w http.ResponseWriter, r *http.Request) {
 	m := r.MultipartForm
 
 		//get the *fileheaders
-	files := m.File["videos"]
-	log.Println(files)
+	files := m.File["files[]"]
 	for i, _ := range files {
 			//for each fileheader, get a handle to the actual file
 		file, err := files[i].Open()
 		defer file.Close()
 		if err != nil {
+			log.Println("Erreur lecture video")
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
 		}
@@ -56,43 +56,13 @@ func upload(w http.ResponseWriter, r *http.Request) {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
 		}
+		log.Println(files[i].Filename)
 		convert(dst.Name(),"out/" + files[i].Filename)
 
 	}
 	log.Println("Upload OK")
 
 	_=r.Close
-
-		// file, header, err := r.FormFile("videos[]")
-
-
-		// if err != nil {
-		// 	log.Println("erreur lecture post, ", err)
-		// 	return
-		// }
-
-
-		// defer file.Close()
-
-		// os.MkdirAll("tmp",777)
-		// out, err := os.Create("tmp/" + header.Filename)
-		// if err != nil {
-		// 	log.Println("erreur création fichier temp, ", err)
-		// 	return
-		// }
-
-		// defer out.Close()
-
-		// _, err = io.Copy(out, file)
-		// if err != nil {
-		// 	log.Println("erreur upload fichier temp, ", err)
-		// }
-
-		// log.Println("File uploaded successfully : ")
-		// io.WriteString(w, header.Filename)
-
-		// _=r.Close
-		// convert(out.Name(),"out/" + header.Filename)
 }
 
 func convert(sourcePath string, nameDestination string)  {
