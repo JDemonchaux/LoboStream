@@ -8,10 +8,10 @@ import (
 "log"
 "os"
 "io"
-"os/exec"
 )
-
+var q = NewQueue()
 func main() {
+	go q.Start()
 	http.Handle("/", http.FileServer(http.Dir("./Views/")))
 	http.HandleFunc("/upload", upload)
 	http.ListenAndServe(":8080", nil)
@@ -57,7 +57,7 @@ func upload(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 		log.Println(files[i].Filename)
-		convert(dst.Name(),"out/" + files[i].Filename)
+		q.Push(&Node{files[i].Filename})
 
 	}
 	log.Println("Upload OK")
@@ -65,12 +65,3 @@ func upload(w http.ResponseWriter, r *http.Request) {
 	_=r.Close
 }
 
-func convert(sourcePath string, nameDestination string)  {
-
-   out, err := exec.Command("ffmpeg.exe", "-i", sourcePath, "-codec:a", "aac", "-strict", "-2", nameDestination+".mp4").CombinedOutput()
-   if err != nil {
-      log.Println("some error found",err)
-   }
-
-   log.Println("out",string(out))
-}
