@@ -4,6 +4,7 @@ import (
 	"time"
 	"log"
 	"fmt"
+	"os"
 )
 
 type Node struct {
@@ -64,9 +65,11 @@ func (q *Queue) Start() {
 }
 
 func convert(nameFile string)  {
-	log.Println("Convert", nameFile)
-//	sourcePath := "tmp" + string(os .PathSeparator) + nameFile + ".mp4"
-//	nameDestination := "out" + string(os .PathSeparator) + nameFile + ".mp4"
+	log.Println("Convert")
+	sourcePath := "tmp" + string(os.PathSeparator) + nameFile + ".mp4"
+	destinationPath := "out" + string(os.PathSeparator) + nameFile + ".mp4"
+	log.Println("Convert source :", sourcePath)
+	log.Println("Convert Destination :", destinationPath)
 //	out, err := exec.Command("ffmpeg.exe", "-i", sourcePath, "-codec:a", "aac", "-strict", "-2", nameDestination).CombinedOutput()
 //	if err != nil {
 //		log.Println("some error found",err)
