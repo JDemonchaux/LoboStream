@@ -14,7 +14,7 @@ func main() {
 	go q.Start()
 	http.Handle("/", http.FileServer(http.Dir("./Views/")))
 	http.HandleFunc("/upload", upload)
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":80", nil)
 
 }
 
