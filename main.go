@@ -9,16 +9,18 @@ import (
 "os"
 "io"
 )
-var q = NewQueue()
 func main() {
+	q := NewQueue()
 	go q.Start()
 	http.Handle("/", http.FileServer(http.Dir("./Views/")))
-	http.HandleFunc("/upload", upload)
+	http.HandleFunc("/upload",  func(w http.ResponseWriter, r *http.Request) {
+		upload(w, r, q)
+	})
 	http.ListenAndServe(":80", nil)
 
 }
 
-func upload(w http.ResponseWriter, r *http.Request) {
+func upload(w http.ResponseWriter, r *http.Request,q *Queue) {
 	log.Println("req ok")
 	io.WriteString(w,"ok")
 

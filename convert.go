@@ -2,9 +2,7 @@ package main
 
 import (
 	"time"
-	"os/exec"
 	"log"
-	"os"
 	"fmt"
 )
 
@@ -57,20 +55,22 @@ func (q *Queue) Pop() *Node {
 func (q *Queue) Start() {
 	for {
 		if q.count != 0 {
-			log.Println(q.Pop())
-			convert(q.Pop().String())
+			ss := q.Pop().String()
+			log.Println("Queue ",ss)
+			convert(ss)
 		}
 		time.Sleep(time.Second)
 	}
 }
 
 func convert(nameFile string)  {
-	sourcePath := "tmp" + string(os .PathSeparator) + nameFile + ".mp4"
-	nameDestination := "out" + string(os .PathSeparator) + nameFile + ".mp4"
-	out, err := exec.Command("ffmpeg.exe", "-i", sourcePath, "-codec:a", "aac", "-strict", "-2", nameDestination).CombinedOutput()
-	if err != nil {
-		log.Println("some error found",err)
-	}
-
-	log.Println("out",string(out))
+	log.Println("Convert", nameFile)
+//	sourcePath := "tmp" + string(os .PathSeparator) + nameFile + ".mp4"
+//	nameDestination := "out" + string(os .PathSeparator) + nameFile + ".mp4"
+//	out, err := exec.Command("ffmpeg.exe", "-i", sourcePath, "-codec:a", "aac", "-strict", "-2", nameDestination).CombinedOutput()
+//	if err != nil {
+//		log.Println("some error found",err)
+//	}
+//
+//	log.Println("out",string(out))
 }
