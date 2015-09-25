@@ -69,6 +69,7 @@
     <sequence date="2015-09-25T16:24:23.265+02:00">
         <rename dir="C:\Users\Marian\IdeaProjects\LoboStream\out" from="Kaamelott - 1x01 -.avi.mp4" to="Kaamelott - 1x01 - Heat.mp4"/>
     </sequence>
+<<<<<<< HEAD
     <sequence date="2015-09-25T17:59:59.703+02:00">
         <rename dir="C:\Users\Marian\IdeaProjects\LoboStream\out" from="Kaamelott - 1x80 -.avi.mp4" to="Out - 1x02 - Not Just Pennies.mp4"/>
     </sequence>
@@ -92,5 +93,27 @@
     </sequence>
     <sequence date="2015-09-25T18:11:25.713+02:00">
         <rename dir="C:\Users\Marian\IdeaProjects\LoboStream\out" from="Kaamelott - 1x97 -.avi.mp4" to="Kaamelott - 1x97 - Agnus dei.mp4"/>
+=======
+    <sequence date="2015-09-26T17:26:07.529+02:00">
+        <rename dir="D:\Prog\Web\Lobostream\out" from="K - 01x00 - Pilote.mkv.mp4" to="Out - 1x05 - The Moment He Opened His Envelope.mp4"/>
+    </sequence>
+    <sequence date="2015-09-26T17:26:24.351+02:00">
+        <rename dir="D:\Prog\Web\Lobostream\out" from="K - 01x01 - Heat.avi.mp4" to="Out - 1x01 - It Must Be The Suit.mp4"/>
+    </sequence>
+    <sequence date="2015-09-26T17:26:38.657+02:00">
+        <rename dir="D:\Prog\Web\Lobostream\out" from="K - 01x04 - Le chevalier mystère.avi.mp4" to="Out - 1x04 - A Little Heart To Heart With Miss Bangor.mp4"/>
+    </sequence>
+    <sequence date="2015-09-26T17:26:52.718+02:00">
+        <rename dir="D:\Prog\Web\Lobostream\out" from="K - 01x02 - Les tartes aux myrtilles.avi.mp4" to="Out - 1x02 - Not Just Pennies.mp4"/>
+    </sequence>
+    <sequence date="2015-09-26T17:27:10.846+02:00">
+        <rename dir="D:\Prog\Web\Lobostream\out" from="K - 01x03 - La table de Breccan.avi.mp4" to="Out - 1x03 - Maybe He'll Bring Back A Geisha.mp4"/>
+    </sequence>
+    <sequence date="2015-09-26T17:27:27.288+02:00">
+        <rename dir="D:\Prog\Web\Lobostream\out" from="K - 01x05 - Le fléau de Dieu.avi.mp4" to="Out - 1x05 - The Moment He Opened His Envelope.mp4"/>
+    </sequence>
+    <sequence date="2015-09-26T17:27:43.615+02:00">
+        <rename dir="D:\Prog\Web\Lobostream\out" from="K - 01x06 - Le garde du corps.avi.mp4" to="Out - 1x06 - I Wouldn't Take Your Hand If I Was Drowning.mp4"/>
+>>>>>>> bd2790fe519e205bd74e515aa55a8422d05ca30a
     </sequence>
 </history>

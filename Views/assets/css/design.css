@@ -1,3 +1,53 @@
+@font-face {
+    font-family: 'Coca-Cola';
+    src: url('../font/LOKICOLA.TTF');
+}
+
+.vue {
+    display:none;
+}
+.title {
+    font-family: Coca-Cola;
+    background-color: #F40000;
+    color: #FFFFFB;
+    margin-left: -2rem;
+    margin-top: 0px;
+    padding: 2rem 2rem 22px;
+}
+
+.menu > li:hover  {
+    background: #fffffb !important;
+}
+
+
+.item-menu {
+    color:#fffffb !important;
+    font-weight: bold;
+    font-family: "Coca-Cola";
+    font-size: 3rem !important;
+}
+
+.item-menu:hover {
+    font-weight: 600;
+    color:#F40000 !important;
+}
+
+.brand {
+    -webkit-transform: rotate(322deg);
+    -moz-transform: rotate(322deg);
+    margin-bottom:3rem;
+}
+
+li.active, li.active > a {
+    background: #fffffb !important;
+    font-weight: 600;
+    color:#F40000 !important;
+}
+
+.coca-cola {
+    background-color: #F40000;
+}
+
 .content {
     padding-left: 245px;
 }
@@ -44,15 +94,16 @@
     -webkit-box-shadow: 0;
     -moz-box-shadow: 0;
     box-shadow: 0;
-    transition:all 0.2s;
+    /*transition:all 0.1s;*/
     border-radius:10px;
 }
 
 .btClear:hover {
-    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
-
+    /*-webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);*/
+    /*-moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);*/
+    /*box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);*/
+    background: #9b9b9b;
+    color:white;
 }
 
 .uploadFinish {
