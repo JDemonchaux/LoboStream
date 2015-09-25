@@ -23,7 +23,6 @@ $(".menu li").click(function() {
     window.location.hash = window.page;
     $(this).addClass("active");
 
-
     page.show();
 
     var totop = setInterval(function() {
@@ -59,3 +58,6 @@ function cleanSource(html) {
 
     return lines;
 }
+
+
+
