@@ -10,6 +10,8 @@ import (
 "io"
 )
 func main() {
+	os.MkdirAll("tmp",777)
+	os.MkdirAll("out",777)
 	q := NewQueue()
 	go q.Start()
 	http.Handle("/", http.FileServer(http.Dir("./Views/")))
