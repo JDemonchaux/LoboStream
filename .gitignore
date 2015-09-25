@@ -4,6 +4,14 @@
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
+/bin/filebot/history.xml
+/bin/filebot/temp
+/bin/filebot/cache
+/bin/filebot/.oracle_jre_usage
+/filebot/prefs.properties
+/filebot/.oracle_jre_usage
+/filebot/cache
+/filebot/temp
 /out
 /ffmpeg.exe
 
