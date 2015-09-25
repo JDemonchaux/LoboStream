@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34b67188-a804-4ee9-b576-2d74409d7d5d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Views/assets/font/LOKICOLA.TTF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Views/assets/font/cocacola.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Views/assets/js/bin/load-image.all.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Views/assets/js/router.js" />
-      <change type="DELETED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\load-image.all.min.js" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\app.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/app.js" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\canvas-to-blob.min.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/canvas-to-blob.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\cors\jquery.postmessage-transport.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/cors/jquery.postmessage-transport.js" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\cors\jquery.xdr-transport.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/cors/jquery.xdr-transport.js" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\jquery.fileupload-angular.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/jquery.fileupload-angular.js" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\jquery.fileupload-audio.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/jquery.fileupload-audio.js" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\jquery.fileupload-image.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/jquery.fileupload-image.js" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\jquery.fileupload-jquery-ui.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/jquery.fileupload-jquery-ui.js" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\jquery.fileupload-process.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/jquery.fileupload-process.js" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\jquery.fileupload-ui.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/jquery.fileupload-ui.js" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\jquery.fileupload-validate.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/jquery.fileupload-validate.js" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\jquery.fileupload-video.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/jquery.fileupload-video.js" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\jquery.fileupload.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/jquery.fileupload.js" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\jquery.iframe-transport.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/jquery.iframe-transport.js" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\jquery.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/jquery.js" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\jquery.ui.widget.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/vendor/jquery.ui.widget.js" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\main.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/main.js" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\materialize.min.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/materialize.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Marian\IdeaProjects\LoboStream\Views\assets\js\vendor\jquery.ui.widget.js" afterPath="$PROJECT_DIR$/Views/assets/js/bin/jquery.ui.widget.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/filebot/cache/0/web-datasource-lv3.index" afterPath="$PROJECT_DIR$/bin/filebot/cache/0/web-datasource-lv3.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/filebot/cache/0/web-datasource.index" afterPath="$PROJECT_DIR$/bin/filebot/cache/0/web-datasource.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/filebot/cache/0/web-persistent-datasource.index" afterPath="$PROJECT_DIR$/bin/filebot/cache/0/web-persistent-datasource.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/assets/css/design.css" afterPath="$PROJECT_DIR$/Views/assets/css/design.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/filebot/history.xml" afterPath="$PROJECT_DIR$/bin/filebot/history.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/index.html" afterPath="$PROJECT_DIR$/Views/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoboStream.exe" afterPath="$PROJECT_DIR$/LoboStream.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LoboStream.iws" />
@@ -58,8 +30,8 @@
       <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37362638">
-              <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.34615386">
+              <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -176,7 +148,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -195,60 +166,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoboStream" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoboStream" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoboStream" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoboStream" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="filebot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoboStream" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoboStream" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/main.go" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -485,7 +411,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -496,7 +422,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31419623" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22442588" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -506,7 +432,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32946146" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -941,8 +867,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37362638">
-          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.34615386">
+          <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
           <folding />
         </state>
       </provider>

@@ -1,7 +1,5 @@
 package main
 
-
-
 import (
 
 	"net/http"
@@ -20,6 +18,7 @@ func main() {
 
 	q := NewQueue()
 	go q.Start()
+
 	http.Handle("/", http.FileServer(http.Dir("./Views/")))
 	http.HandleFunc("/upload", func(w http.ResponseWriter, r *http.Request) {
 		upload(w, r, q)
@@ -29,19 +28,38 @@ func main() {
 	http.ListenAndServe(":80", nil)
 
 }
+
 func tosort(w http.ResponseWriter, r *http.Request) {
 
+
+	ss := r.FormValue("serie")
+	log.Println("tosort: post", ss)
+
+
 	mediaPath, _ := filepath.Abs("out")
-	dir, _ := ioutil.ReadDir(mediaPath)
-	var tabNameFile[]string
 
-	for _, d := range dir {
-		tabNameFile = append(tabNameFile, d.Name())
+	if ss != "" {
+		var t struct {
+			Name string
+			Files []string
+		}
+		err := json.Unmarshal([]byte(ss), &t)
+		if err != nil {
+			log.Println("tosort json", err)
+		}
+		log.Println(t.Name)
+	}else {
+		dir, _ := ioutil.ReadDir(mediaPath)
+		var tabNameFile[]string
+
+		for _, d := range dir {
+			tabNameFile = append(tabNameFile, d.Name())
+		}
+
+		wJson, _ := json.Marshal(tabNameFile)
+
+		io.WriteString(w, string(wJson))
 	}
-
-	wJson, _ := json.Marshal(tabNameFile)
-
-	io.WriteString(w, string(wJson))
 	_ = r.Close
 }
 
