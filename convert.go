@@ -83,5 +83,5 @@ func convert(nameFile string)  {
 	}
 
 	log.Println("out",string(out))
-	rename(nameFile + ".mp4")
+	rename(nameFile + ".mp4", "kaamelott")
 }

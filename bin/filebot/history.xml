@@ -69,4 +69,28 @@
     <sequence date="2015-09-25T16:24:23.265+02:00">
         <rename dir="C:\Users\Marian\IdeaProjects\LoboStream\out" from="Kaamelott - 1x01 -.avi.mp4" to="Kaamelott - 1x01 - Heat.mp4"/>
     </sequence>
+    <sequence date="2015-09-25T17:59:59.703+02:00">
+        <rename dir="C:\Users\Marian\IdeaProjects\LoboStream\out" from="Kaamelott - 1x80 -.avi.mp4" to="Out - 1x02 - Not Just Pennies.mp4"/>
+    </sequence>
+    <sequence date="2015-09-25T18:00:29.810+02:00">
+        <rename dir="C:\Users\Marian\IdeaProjects\LoboStream\out" from="Kaamelott - 1x96 -.avi.mp4" to="Out - 1x02 - Not Just Pennies.mp4"/>
+    </sequence>
+    <sequence date="2015-09-25T18:02:29.270+02:00">
+        <rename dir="C:\Users\Marian\IdeaProjects\LoboStream\out" from="Kaamelott - 1x84 -.avi.mp4" to="Out - 1x02 - Not Just Pennies.mp4"/>
+    </sequence>
+    <sequence date="2015-09-25T18:03:03.427+02:00">
+        <rename dir="C:\Users\Marian\IdeaProjects\LoboStream\out" from="Kaamelott - 1x100 -.avi.mp4" to="Kaamelott - 1x100 - La Vraie Nature du Graal.mp4"/>
+    </sequence>
+    <sequence date="2015-09-25T18:06:22.032+02:00">
+        <rename dir="C:\Users\Marian\IdeaProjects\LoboStream\out" from="Kaamelott - 1x80 -.avi.mp4" to="Out - 1x02 - Not Just Pennies.mp4"/>
+    </sequence>
+    <sequence date="2015-09-25T18:09:44.104+02:00">
+        <rename dir="C:\Users\Marian\IdeaProjects\LoboStream\out" from="Kaamelott - 1x65 -.avi.mp4" to="Kaamelott - 1x65 - La Visite d’Ygerne.mp4"/>
+    </sequence>
+    <sequence date="2015-09-25T18:10:35.059+02:00">
+        <rename dir="C:\Users\Marian\IdeaProjects\LoboStream\out" from="Kaamelott - 1x81 -.avi.mp4" to="Kaamelott - 1x81 - Polymorphie.mp4"/>
+    </sequence>
+    <sequence date="2015-09-25T18:11:25.713+02:00">
+        <rename dir="C:\Users\Marian\IdeaProjects\LoboStream\out" from="Kaamelott - 1x97 -.avi.mp4" to="Kaamelott - 1x97 - Agnus dei.mp4"/>
+    </sequence>
 </history>
