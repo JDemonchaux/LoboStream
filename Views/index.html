@@ -11,7 +11,7 @@
 <div class="left">
     <ul id="slide-out" class="side-nav fixed blue lighten-1">
         <div class="center-align logo">
-            <a href="http://localhost:8080" class="white-text"><h5><b>LoBoStreAm</b></h5></a>
+            <a href="/" class="white-text"><h5><b>LoBoStreAm</b></h5></a>
         </div>
     </ul>
     <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -25,8 +25,8 @@
         </div>
         <div class="col s4 offset-s4">
             <div class="file-field input-field">
-                <div class="btn fileinput-button">
-                    <span><i class="material-icons">add_circle</i></span>
+                <div class="btn waves-effect waves-light blue lighten-1">
+                    <span><i class="material-icons small">add</i></span>
                     <input id="fileupload" type="file" name="files[]" multiple>
                 </div>
                 <div class="file-path-wrapper">
@@ -43,8 +43,8 @@
     </div>
     <div class="row">
         <div class="col s8 offset-s2">
-            <div id="progress" class="progress">
-                <div class="progress-bar determinate"></div>
+            <div id="progress1" class="progress green lighten-4">
+                <div class="progress-bar determinate green darken-2"></div>
             </div>
             <!-- The container for the uploaded files -->
             <div id="files" class="files">
@@ -53,7 +53,6 @@
         </div>
         <br>
     </div>
-
 </div>
 
 
@@ -65,11 +64,9 @@
 <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
 <script src="assets/js/vendor/jquery.ui.widget.js"></script>
 <!--The Load Image plugin is included for the preview images and image resizing functionality-->
-<script src="//blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js"></script>
+<script src="assets/js/load-image.all.min.js"></script>
 <!-- The Canvas to Blob plugin is included for image resizing functionality -->
-<script src="//blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
-<!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="assets/js/canvas-to-blob.min.js"></script>
 <!--The Iframe Transport is required for browsers without support for XHR file uploads-->
 <script src="assets/js/jquery.iframe-transport.js"></script>
 <!-- The basic File Upload plugin -->
@@ -89,7 +86,8 @@
         'use strict';
         var url = "/upload",
                 uploadButton = $('<button/>')
-                        .addClass('btn waves-effect waves-light right btUpload')
+                        .prepend('<div class="progressOne"></div>')
+                        .addClass('btn-floating waves-effect waves-light blue lighten-1 right btUpload')
                         .prop('disabled', true)
                         .text('Processing...')
                         .on('click', function () {
@@ -97,10 +95,14 @@
                                     data = $this.data();
                             $this
                                     .off('click')
-                                    .text('Annuler')
+                                    .removeClass("blue").addClass("red")
+                                    .text('').append('<i class="material-icons small">cancel</i>')
                                     .on('click', function () {
-                                        $this.remove();
+                                        $(this).parent().parent().remove();
                                         data.abort();
+                                        $('#progress1 .determinate').attr(
+                                                'style',
+                                                'width: 0%;');
                                     });
                             data.submit().always(function () {
                                 $this.remove();
@@ -108,14 +110,13 @@
                         });
         $('#fileupload').fileupload({
             url: url,
-//            dataType: 'json',
             autoUpload: false,
             acceptFileTypes: /(\.|\/)(avi|mkv|mp4|mpeg|wmv)$/i
         }).on('fileuploadadd', function (e, data) {
             data.context = $('<div/>').appendTo('#files');
             $.each(data.files, function (index, file) {
                 data.context.append('<span class="btClearwrapper"><i class="btClear material-icons">clear</i></span>')
-                var node = $('<p/>')
+                var node = $('<p/>').append('<div class="progressbar"></div>')
                         .append($('<span/>').text(file.name));
                 if (!index) {
                     node
@@ -140,17 +141,20 @@
             }
             if (index + 1 === data.files.length) {
                 data.context.find('button')
-                        .text('Go upload')
+                        .text('').append('<i class="material-icons small">cloud_upload</i>')
                         .prop('disabled', !!data.files.error);
             }
         }).on('fileuploadprogressall', function (e, data) {
             var progress = parseInt(data.loaded / data.total * 100, 10);
-            $('#progress .determinate').attr(
+            $('#progress1 .determinate').attr(
                     'style',
                     'width: ' + progress + '%;'
             );
+        }).on('fileuploadprogress', function (e, data) {
+            console.log(e);
+            console.log(data);
         }).on('fileuploaddone', function (e, data) {
-            $.each(data.result.files, function (index, file) {
+            $.each(data.files, function (index, file) {
                 if (file.url) {
                     var link = $('<a>')
                             .attr('target', '_blank')
@@ -163,7 +167,10 @@
                             .append('<br>')
                             .append(error);
                 }
-                $(data.context.children()[index]).append("<p>Fini!</p>");
+                $('#progress1 .determinate').attr(
+                        'style',
+                        'width: 0%;');
+                $(data.context).append('<span class="right uploadFinish"><i class="material-icons small">cloud_done</i></span>');
             });
         }).on('fileuploadfail', function (e, data) {
             $.each(data.files, function (index) {

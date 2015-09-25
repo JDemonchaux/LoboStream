@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $(".btClear>i").on('click', function () {
-        console.log($(this).parent());
+    $(document).on('click', ".btClear" ,function () {
+        $(this).parent().parent().remove();
     });
 //
 //    $("#formUpload").on('submit', function (e) {
