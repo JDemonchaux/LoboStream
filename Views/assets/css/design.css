@@ -8,6 +8,11 @@
     font-family: Coca-Cola;
 }
 
+.brand {
+    -webkit-transform: rotate(322deg);
+    -moz-transform: rotate(322deg);
+}
+
 .coca-cola {
     background-color: #F40000;
 }

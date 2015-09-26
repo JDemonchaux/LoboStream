@@ -10,9 +10,7 @@
 <body>
 <div class="left">
     <ul id="slide-out" class="side-nav fixed coca-cola">
-        <div class="center-align logo">
-            <a href="/" class="white-text"><h5><b>LoBoStreAm</b></h5></a>
-        </div>
+        <a href="/" class="white-text brand"><h5><b>LoBoStreAm</b></h5></a>
     </ul>
     <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 </div>
@@ -25,7 +23,7 @@
         </div>
         <div class="col s4 offset-s4">
             <div class="file-field input-field">
-                <div class="btn waves-effect waves-light coca-cola">
+                <div class="btn waves-effect waves-red coca-cola">
                     <span><i class="material-icons small">add</i></span>
                     <input id="fileupload" type="file" name="files[]" multiple>
                 </div>
@@ -136,7 +134,9 @@
                         }
                         node.appendTo(data.context);
                     });
-
+                    $('.uploadAll').on('click', function () {
+                       console.log(data);
+                    });
                 })
                 .on('fileuploadprocessalways', function (e, data) {
                     var index = data.index,
@@ -200,9 +200,7 @@
                 })
                 .prop('disabled', !$.support.fileInput).parent().addClass($.support.fileInput ? undefined : 'disabled');
 
-        $('.uploadAll').on('click', function () {
-            upload.$submit();
-        });
+
         $('.cancelAll').on('click', function () {
             upload.abort();
         });
