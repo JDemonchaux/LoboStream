@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Coca-Cola'; /*a name to be used later*/
+    src: url('../font/LOKICOLA.TTF'); /*URL to font*/
+}
+
+
+.title {
+    font-family: Coca-Cola;
+}
+
 .coca-cola {
     background-color: #F40000;
 }

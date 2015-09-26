@@ -5,6 +5,7 @@ import (
 	"log"
 	"fmt"
 	"os"
+	"os/exec"
 )
 
 type Node struct {
@@ -70,10 +71,10 @@ func convert(nameFile string)  {
 	destinationPath := "out" + string(os.PathSeparator) + nameFile + ".mp4"
 	log.Println("Convert source :", sourcePath)
 	log.Println("Convert Destination :", destinationPath)
-//	out, err := exec.Command("ffmpeg.exe", "-i", sourcePath, "-codec:a", "aac", "-strict", "-2", nameDestination).CombinedOutput()
-//	if err != nil {
-//		log.Println("some error found",err)
-//	}
-//
-//	log.Println("out",string(out))
+	out, err := exec.Command("ffmpeg.exe", "-i", sourcePath, "-codec:a", "aac", "-strict", "-2", destinationPath).CombinedOutput()
+	if err != nil {
+		log.Println("some error found",err)
+	}
+
+	log.Println("out",string(out))
 }
