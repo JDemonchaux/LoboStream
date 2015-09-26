@@ -9,6 +9,7 @@ import (
 "os"
 "io"
 )
+
 func main() {
 	os.MkdirAll("tmp",777)
 	os.MkdirAll("out",777)
