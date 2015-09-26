@@ -78,7 +78,7 @@ li.active, li.active > a {
 
 #files > div {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #files > div > p {
@@ -109,6 +109,12 @@ li.active, li.active > a {
 .uploadFinish {
     color:#4caf50;
     margin-top:-42px;
+}
+
+.file-error {
+    position: absolute;
+    margin-top: 1rem;
+    text-indent: 0.5rem;
 }
 
 /**

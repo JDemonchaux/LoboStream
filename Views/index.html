@@ -48,11 +48,11 @@
     </div>
     <div class="row">
         <div class="col s8 offset-s2">
-            <button class="btn green waves-effect waves-light left uploadAll">
-                Go Upload
-            </button>
-            <button class="btn red waves-effect waves-light right cancelAll">
+            <button class="btn red waves-effect waves-light left cancelAll">
                 Stop All
+            </button>
+            <button class="btn green waves-effect waves-light right uploadAll">
+                Go Upload
             </button>
         </div>
     </div>
@@ -164,6 +164,7 @@
                             data.submit().always(function () {
                                 $this.remove();
                             });
+
                         });
         var upload = $('#fileupload').fileupload({
             url: url,
@@ -184,7 +185,10 @@
                         node.appendTo(data.context);
                     });
                     $('.uploadAll').on('click', function () {
-                        console.log(data);
+                        data.submit();
+                    });
+                    $('.cancelAll').on('click', function () {
+                        data.abort();
                     });
                 })
                 .on('fileuploadprocessalways', function (e, data) {
@@ -241,18 +245,15 @@
                 })
                 .on('fileuploadfail', function (e, data) {
                     $.each(data.files, function (index) {
-                        var error = $('<span class="red-text darken-2 italic"/>').text('Impossible d\'upload.');
+                        var error = $('<span class="red-text darken-2 italic file-error"/>').text('Erreur lors de l\'upload.');
                         $(data.context.children()[index])
-                                .append('<br>')
                                 .append(error);
                     });
                 })
                 .prop('disabled', !$.support.fileInput).parent().addClass($.support.fileInput ? undefined : 'disabled');
 
 
-        $('.cancelAll').on('click', function () {
-            upload.abort();
-        });
+
     });
 
 
