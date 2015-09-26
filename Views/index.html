@@ -24,7 +24,7 @@
 <div id="home" class="row content vue">
     <div class="row">
         <div class="col s12 center-align">
-            <h1 class="title">Upload & Convert</h1>
+            <h1 class="title">Upload & Files</h1>
 
             <br>
         </div>
@@ -73,13 +73,16 @@
 <div id="atrier" class="row content vue">
     <div class="row">
         <div class="col s12 center-align">
-            <h1 class="title">Films & Series</h1>
+            <h1 class="title">En attente</h1>
         </div>
     </div>
     <div class="row">
         <div class="col s8 offset-s2">
             <div class="action">
-                <p>ici les actions</p>
+                <div class="left">
+                    <input type="text" placeholder="Entrez le nom de la serie" id="nomSerie"/>
+                </div>
+                <button id="addSerie" class="btn coca-cola waves-effect waves-light">Convertir les episodes</button>
             </div>
             <table class="bordered highlight">
                 <thead>
@@ -91,21 +94,16 @@
                     <th>
                         Nom du fichier
                     </th>
-                    <th>
-                        Statut
-                    </th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td></td>
                     <td></td>
-                    <td></td>
                 </tr>
                 </tbody>
                 <tfoot>
                 <tr>
-                    <td></td>
                     <td></td>
                     <td></td>
                 </tr>
@@ -119,6 +117,7 @@
 <script type="application/javascript" src="assets/js/bin/materialize.min.js"></script>
 <script type="application/javascript" src="assets/js/script.js"></script>
 <script type="application/javascript" src="assets/js/router.js"></script>
+<script type="application/javascript" src="assets/js/toSort.js"></script>
 <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
 <script src="assets/js/bin/vendor/jquery.ui.widget.js"></script>
 <!--The Load Image plugin is included for the preview images and image resizing functionality-->
