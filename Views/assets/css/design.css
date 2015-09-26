@@ -1,16 +1,47 @@
 @font-face {
-    font-family: 'Coca-Cola'; /*a name to be used later*/
-    src: url('../font/LOKICOLA.TTF'); /*URL to font*/
+    font-family: 'Coca-Cola';
+    src: url('../font/LOKICOLA.TTF');
+}
+
+.vue {
+    display:none;
+}
+.title {
+    font-family: Coca-Cola;
+    background-color: #F40000;
+    color: #FFFFFB;
+    margin-left: -2rem;
+    margin-top: 0px;
+    padding: 2rem 2rem 22px;
+}
+
+.menu > li:hover  {
+    background: #fffffb !important;
 }
 
 
-.title {
-    font-family: Coca-Cola;
+.item-menu {
+    color:#fffffb !important;
+    font-weight: bold;
+    font-family: "Coca-Cola";
+    font-size: 3rem !important;
+}
+
+.item-menu:hover {
+    font-weight: 600;
+    color:#F40000 !important;
 }
 
 .brand {
     -webkit-transform: rotate(322deg);
     -moz-transform: rotate(322deg);
+    margin-bottom:3rem;
+}
+
+li.active, li.active > a {
+    background: #fffffb !important;
+    font-weight: 600;
+    color:#F40000 !important;
 }
 
 .coca-cola {
