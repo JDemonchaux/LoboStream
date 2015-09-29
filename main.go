@@ -36,7 +36,7 @@ func tosort(w http.ResponseWriter, r *http.Request) {
 	log.Println("tosort: post", ss)
 
 
-	mediaPath, _ := filepath.Abs("out")
+	mediaPath, _ := filepath.Abs("tmp")
 
 	if ss != "" {
 		var t struct {
